@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>설정</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Drag & Copy 허용</h2>
+  <label class="switch-label">
+    전체 사이트에 적용
+    <label class="switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider round"></span>
+    </label>
+  </label>
+  <div id="status-msg" style="margin-top: 10px; font-size: 13px; color: green;"></div>
+  <div id="whitelist-section">
+    <h3>허용된 사이트 목록</h3>
+    <ul id="whitelist"></ul>
+    <div class="input-row">
+      <input type="text" id="site-input" placeholder="예: naver.com">
+      <button id="add-site">추가</button>
+    </div>
+    <button id="add-current" class="add-site-now">현재 페이지 추가</button>
+  </div>
+  <div class="section">
+  <br>
+  <h3>JS 제한 설정</h3>
+  <label class="switch-label">
+    JS 제한 모드 (전체 적용)
+    <label class="switch">
+      <input type="checkbox" id="js-mode-toggle">
+      <span class="slider round"></span>
+    </label>
+  </label>
+  <div id="js-whitelist-section">
+    <h4>JS 제한 화이트리스트</h4>
+    <ul id="js-whitelist"></ul>
+    <div class="input-row">
+      <input type="text" id="js-site-input" placeholder="예: example.com">
+      <button id="add-js-site">추가</button>
+    </div>
+  </div>
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>
